@@ -10,10 +10,17 @@ body {
   margin: 0;
   font-family: poppins, Arial, Helvetica, sans-serif;
   overflow: hidden;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    97deg,
+    rgba(131, 58, 180, 0.1) 0%,
+    rgba(253, 29, 29, 0.1) 50%,
+    rgba(252, 176, 69, 0.1) 100%
+  );
 }
 
 .header {
-  background-color: firebrick;
+  background-color: rgba(57, 167, 63, 0.692);
   color: #fff;
   position: fixed;
   height: 3.5rem;
@@ -26,6 +33,12 @@ body {
   font-family: poppinsBold;
   font-size: 3rem;
   display: flex;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    97deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
 
 .header h1 {
@@ -55,7 +68,7 @@ body {
 }
 
 .loader img {
-  width: 400px;
+  width: 100px;
 }
 
 .loader h1 {
@@ -104,5 +117,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0;
+    border-radius: 10px 10px 0px 0px;
   }
 }

@@ -9,7 +9,7 @@ const NATURAL_EVENT_WILDFIRE = "wildfires";
 const Map = ({ eventData, center, zoom }) => {
   const [locationInfo, setLocationInfo] = useState(null);
 
-  const marker = eventData.map((data) => console.log(data));
+  const marker = eventData.map((data) => console.log(data.categories[0].id));
 
   const markers = eventData.map((ev, index) => {
     if (ev.categories[0].id === NATURAL_EVENT_WILDFIRE) {
